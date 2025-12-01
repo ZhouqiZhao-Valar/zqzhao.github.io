@@ -2,10 +2,162 @@
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
-  <title>我的个人网站</title>
+  <title>我的个人网站 · 学习与随笔</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- 简单内联样式，先不拆文件，方便你理解 -->
+  <style>
+    /* 整体页面样式 */
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "PingFang SC", "Microsoft Yahei", sans-serif;
+      background: #f5f5f7;
+      color: #222;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    /* 内容居中的“卡片” */
+    .container {
+      max-width: 800px;
+      width: 90%;
+      background: #ffffff;
+      padding: 32px 24px 24px;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    }
+
+    /* 顶部标题区域 */
+    .site-title {
+      margin-bottom: 8px;
+      font-size: 28px;
+    }
+
+    .site-subtitle {
+      margin: 0;
+      font-size: 14px;
+      color: #777;
+    }
+
+    /* 导航栏 */
+    .nav {
+      margin-top: 20px;
+      border-top: 1px solid #eee;
+      border-bottom: 1px solid #eee;
+      padding: 8px 0;
+    }
+
+    .nav a {
+      text-decoration: none;
+      margin-right: 16px;
+      font-size: 14px;
+      color: #555;
+    }
+
+    .nav a:hover {
+      color: #0070f3;
+    }
+
+    /* 主内容 */
+    .section {
+      margin-top: 24px;
+    }
+
+    .section h2 {
+      margin: 0 0 8px;
+      font-size: 20px;
+    }
+
+    .section p {
+      margin: 4px 0;
+      line-height: 1.7;
+      font-size: 14px;
+    }
+
+    /* 列表 */
+    .post-list {
+      list-style: none;
+      padding-left: 0;
+      margin: 8px 0 0;
+    }
+
+    .post-list li {
+      margin-bottom: 6px;
+      font-size: 14px;
+    }
+
+    .post-list a {
+      color: #0070f3;
+      text-decoration: none;
+    }
+
+    .post-list a:hover {
+      text-decoration: underline;
+    }
+
+    /* 页脚 */
+    .footer {
+      margin-top: 32px;
+      padding-top: 12px;
+      border-top: 1px solid #eee;
+      font-size: 12px;
+      color: #999;
+      text-align: center;
+    }
+  </style>
 </head>
-  <body>
-  <h1>你好，这里是我的个人网站</h1>
-  <p>这是我用 GitHub Pages 搭建的第一个页面。</p>
+<body>
+  <div class="container">
+    <!-- 标题部分 -->
+    <header>
+      <h1 class="site-title">我的个人网站</h1>
+      <p class="site-subtitle">记录学习、思考和一点点生活碎片</p>
+    </header>
+
+    <!-- 导航栏（后面可以做多个页面，现在只是占位） -->
+    <nav class="nav">
+      <a href="#">首页</a>
+      <a href="#">文章</a>
+      <a href="#">关于我</a>
+    </nav>
+
+    <!-- 自我介绍 -->
+    <section class="section">
+      <h2>👋 你好呀</h2>
+      <p>欢迎来到我的个人小站。</p>
+      <p>这里主要用来记录我在学习过程中的一些笔记、随想，以及踩过的坑，希望未来的自己和偶然路过的你，都能从中得到一点点启发或帮助。</p>
+    </section>
+
+    <!-- 最近更新（可以以后变成真正的文章链接） -->
+    <section class="section">
+      <h2>📝 最近在写什么</h2>
+      <ul class="post-list">
+        <li>· 从 0 搭建 GitHub Pages 个人网站的过程（草稿）</li>
+        <li>· 我为什么想开始在网上记录学习</li>
+        <li>· 第一次接触 HTML 的一些感受</li>
+      </ul>
+      <p style="font-size: 12px; color: #888; margin-top: 6px;">（这些先当作占位文案，等你写出真文章，就可以把它们换成链接 👀）</p>
+    </section>
+
+    <!-- 计划与方向 -->
+    <section class="section">
+      <h2>📚 接下来我想做的事情</h2>
+      <p>· 学习 HTML / CSS / 简单的前端知识，并用在这个网站上；</p>
+      <p>· 把学习笔记整理成对别人也有帮助的文章；</p>
+      <p>· 逐步搭建属于自己的「知识小宇宙」。</p>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+      <div>© <span id="year"></span> 我的个人网站 · 由 GitHub Pages 驱动</div>
+    </footer>
+  </div>
+
+  <!-- 自动显示当前年份的小脚本，可有可无 -->
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
