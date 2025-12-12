@@ -1,5 +1,24 @@
 console.log("script.js loaded");
 
+const posts = [
+  {
+    title: "第一次学 Git",
+    date: "2025-01-01",
+    link: "#post1"
+  },
+  {
+    title: "HTML 入门踩坑记录",
+    date: "2025-01-03",
+    link: "#post2"
+  },
+  {
+    title: "CSS 基础知识总结",
+    date: "2025-01-05",
+    link: "#post3"
+  },
+];
+
+
 document.addEventListener("DOMContentLoaded", () => {
 
   // 1) 页脚年份
