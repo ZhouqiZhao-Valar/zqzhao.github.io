@@ -122,3 +122,29 @@ body {
   color: var(--primary);
   font-weight: 700;
 }
+
+/* 暗色主题：给 body 加上 .dark 后生效 */
+body.dark {
+  --bg: #0b0f19;
+  --card: #111827;
+  --text: #e5e7eb;
+  --muted: #a1a1aa;
+  --border: #1f2937;
+  --primary: #60a5fa;
+}
+
+/* 主题切换按钮 */
+.theme-btn {
+  margin-left: 12px;
+  padding: 6px 10px;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text);
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.theme-btn:hover {
+  border-color: var(--primary);
+}

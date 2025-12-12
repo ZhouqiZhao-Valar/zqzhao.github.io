@@ -10,3 +10,19 @@ navLinks.forEach((a) => {
     a.classList.add("active");
   });
 });
+
+// 暗色模式切换 + 记忆
+const toggleBtn = document.getElementById("themeToggle");
+const savedTheme = localStorage.getItem("theme");
+
+if (savedTheme === "dark") {
+  document.body.classList.add("dark");
+  toggleBtn.textContent = "☀️ 亮色";
+}
+
+toggleBtn.addEventListener("click", () => {
+  document.body.classList.toggle("dark");
+  const isDark = document.body.classList.contains("dark");
+  localStorage.setItem("theme", isDark ? "dark" : "light");
+  toggleBtn.textContent = isDark ? "☀️ 亮色" : "🌙 暗色";
+});
