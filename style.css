@@ -35,6 +35,34 @@ body {
   box-shadow: 0 10px 30px rgba(0,0,0,0.05);
 }
 
+header {
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+input, textarea, button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+}
+
+
 /* ===== 标题区 ===== */
 .site-title {
   margin: 0 0 8px;
@@ -168,5 +196,3 @@ body.dark {
 .theme-btn:hover {
   border-color: var(--primary);
 }
-
-
