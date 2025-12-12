@@ -1,11 +1,14 @@
 console.log("script.js loaded");
 
 document.addEventListener("DOMContentLoaded", () => {
+
   // 1) 页脚年份
+
   const yearEl = document.getElementById("year");
   if (yearEl) {
     yearEl.textContent = new Date().getFullYear();
   }
+
 
   // 2) 导航点击高亮
   const navLinks = document.querySelectorAll(".nav a");
@@ -16,7 +19,9 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
+
   // 3) 暗色模式切换 + 记忆
+
   const toggleBtn = document.getElementById("themeToggle");
   if (!toggleBtn) {
     console.error("themeToggle button not found");
@@ -27,8 +32,10 @@ document.addEventListener("DOMContentLoaded", () => {
   if (savedTheme === "dark") {
     document.body.classList.add("dark");
     toggleBtn.textContent = "☀️ 亮色";
+
   } else {
     toggleBtn.textContent = "🌙 暗色";
+
   }
 
   toggleBtn.addEventListener("click", () => {
