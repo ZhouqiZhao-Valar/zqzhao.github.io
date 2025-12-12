@@ -117,3 +117,8 @@ body {
   color: #999;
   text-align: center;
 }
+
+.nav a.active {
+  color: var(--primary);
+  font-weight: 700;
+}
