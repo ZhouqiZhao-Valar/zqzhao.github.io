@@ -1,0 +1,28 @@
+/* 全局样式 */
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 0 20px;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+}
+
+/* 标题 */
+h1 {
+    color: #333;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}
+
+/* 段落 */
+p {
+    color: #555;
+}
+
+/* 强调 */
+.highlight {
+    color: #007acc;
+    font-weight: bold;
+}
+
