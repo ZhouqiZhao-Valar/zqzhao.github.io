@@ -1,3 +1,4 @@
+console.log("script.js loaded")
 // 1) 页脚年份
 document.getElementById("year").textContent = new Date().getFullYear();
 
