@@ -97,7 +97,7 @@ body {
   margin: 8px 0 0;
 }
 
-.post-item{
+.post-item {
     margin-bottom: 12px;
     font-size: 14px;
 }
@@ -111,7 +111,7 @@ body {
     text-decoration: underline;
 }
 
-.post-item span{
+.post-item span {
     font-size: 12px;
     color: var(--muted);
 
