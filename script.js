@@ -18,6 +18,17 @@ const posts = [
   },
 ];
 
+// 渲染文章列表
+const postList = document.getElementById("postList");
+
+console.log(posts);
+posts.forEach(post => {
+  const li = document.createElement("li");
+  li.classList.add("post-item");
+  li.innerHTML = `<a href="${post.link}">${post.title}</a> <span>(${post.date})</span>`;
+  postList.appendChild(li);
+});
+
 
 document.addEventListener("DOMContentLoaded", () => {
 
